@@ -1,0 +1,99 @@
+.App {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+* {
+  line-height: 1.6;
+  color: slategrey;
+}
+
+.login-link,
+.login-link:visited,
+.login-link:active,
+.login-link:focus {
+  letter-spacing: 3px;
+  text-decoration: none;
+  color: #61dafb;
+  font-weight: 900;
+  text-transform: uppercase;
+  border: 5px solid white;
+  border-radius: 5px;
+  background-color: rgb(163, 163, 163);
+  width: 16rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  box-shadow: 1rem 1rem 0 black;
+}
+.login-link > div {
+  color: inherit;
+  text-align: center;
+}
+.login-link > img {
+  width: 6rem;
+  height: 6rem;
+  object-fit: cover;
+}
+
+.login-link:hover {
+  filter: contrast(0.8);
+}
+
+.logged-in {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.user > * {
+  padding: 1rem;
+}
+
+.user > img {
+  width: 5rem;
+  height: 5rem;
+}
+
+.repos {
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.repo-list {
+  overflow: scroll;
+  list-style-type: none;
+}
+.repo-list > li:nth-child(odd) {
+  background-color: aliceblue;
+}
+
+.repo-list > li > a,
+.repo-list > li > a:visited,
+.repo-list > li > a:active {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.3rem 1rem;
+}
+.repo-list > li > a:hover {
+  filter: brightness(1.2);
+}
+.logout-btn {
+  cursor: pointer;
+  border: none;
+  font-size: 1.6rem;
+  padding: 0.3rem 1rem;
+  text-transform: uppercase;
+}
+.logout-btn:hover {
+  filter: contrast(0.5);
+}
